@@ -203,24 +203,11 @@ int main()
 } 
 ```
 ## Tabulations and graph 
-SL NO	 % OF POT VALUE	  ADC VALUE
-1		      10              
-2		      20
-3		      30
-4		      40
-5		      50
-6		      60
-7		      70
-8		      80
-9		      90
-10		    100
+
 ![image](https://user-images.githubusercontent.com/93992063/200162757-466d848b-6199-4060-9e17-84fa0316c779.png)
 
  ![image](https://user-images.githubusercontent.com/36288975/198947184-dbccf4b1-10a1-4090-a670-93526ed6e597.png)
 
-
-
- 
 Figure -09 graph between % of pot(1Kohm) values and ADC 
 
 Output screen shots :
