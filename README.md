@@ -211,6 +211,9 @@ int main()
 Figure -09 graph between % of pot(1Kohm) values and ADC 
 
 Output screen shots :
+![image](https://user-images.githubusercontent.com/93992063/200164380-13299949-f5b1-4313-ba48-0ef9dba3fd63.png)
+![image](https://user-images.githubusercontent.com/93992063/200164499-a53dccde-d96f-462c-a109-c0e74230a215.png)
+![image](https://user-images.githubusercontent.com/93992063/200164603-6288e036-c674-4472-8105-9edf4d9af2f1.png)
 
 Result :
 Configuring an ADC and the input values are displayed on LCD screen .
