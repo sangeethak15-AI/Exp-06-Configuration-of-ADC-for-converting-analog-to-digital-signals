@@ -1,8 +1,8 @@
 # Exp-06-Configuration-of-ADC-for-converting-analog-to-digital-signals
 
 
-## Name :	
-## Roll no:
+## Name :	Sangeetha.K
+## Roll no:212221230085
 ## Date of experiment : 
   
   
@@ -177,19 +177,44 @@ ADxDRy. E.g. AD0DR1 contains ADC result of channel 1 of ADC0.
 Figure -08 Circuit diagram of interfacing an POT with ADC input pin 
 
 ## Kiel - Program 
- 
+```
+#include <lpc214x.h>
+#include "LCD.h"
+#include "ADC.h"
+unsigned int val;
+
+int main()
+{
+    IO1DIR=0xffffffff;
+    IO0DIR=0x00000000;
+    PINSEL0=0x0300;
+    VPBDIV=0x02;
+    lcd_init();
+    show("ADC Value : ");
+    while(1) {
+        cmd(0x8b);
+        val=adc(0,6);
+        dat((val/1000)+48);
+        dat(((val/100)%10)+48);
+        dat(((val/10)%10)+48);
+        dat((val%10)+48);
+
+    }
+} 
+```
 ## Tabulations and graph 
-SL NO	% OF POT VALUE	ADC VALUE
-1		
-2		
-3		
-4		
-5		
-6		
-7		
-8		
-9		
-10		
+SL NO	 % OF POT VALUE	  ADC VALUE
+1		      10              
+2		      20
+3		      30
+4		      40
+5		      50
+6		      60
+7		      70
+8		      80
+9		      90
+10		    100
+![image](https://user-images.githubusercontent.com/93992063/200162757-466d848b-6199-4060-9e17-84fa0316c779.png)
 
  ![image](https://user-images.githubusercontent.com/36288975/198947184-dbccf4b1-10a1-4090-a670-93526ed6e597.png)
 
@@ -198,11 +223,12 @@ SL NO	% OF POT VALUE	ADC VALUE
  
 Figure -09 graph between % of pot(1Kohm) values and ADC 
 
+Output screen shots :
 
 Result :
-Configuring an ADC and the input values are displayed on LCD screen 
+Configuring an ADC and the input values are displayed on LCD screen .
 
-Output screen shots :
+
 
 
 
